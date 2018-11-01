@@ -3,6 +3,8 @@
 %wheel distances 85mm wd
 %radius 20mm r
 %Input the two velocity arguments, come up with a new state.
+%ICC=[x-R*sin(o),y+R*cos(o)]
+
 function state = robot_movement(v1,v2,state)
 if v1==v2 %case where the bearing angle is the same just keep the same angle
     %Update the time based on the absolute bearing angle.
