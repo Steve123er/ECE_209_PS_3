@@ -5,6 +5,25 @@
 %Input the two velocity arguments, come up with a new state.
 %ICC=[x-R*sin(o),y+R*cos(o)]
 
+%x
+%y
+%θ =
+
+%cos(ωδt) −sin(ωδt) 0
+%sin(ωδt) cos(ωδt) 0
+%0           0     1
+
+%x − ICCx
+%y − ICCy
+%θ
+
+ %+
+
+%ICCx
+%ICCy
+%ωδt
+
+
 function state = robot_movement(v1,v2,state)
 if v1==v2 %case where the bearing angle is the same just keep the same angle
     %Update the time based on the absolute bearing angle.
